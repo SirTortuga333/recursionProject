@@ -13,10 +13,10 @@ function fibs(num) {
 // console.log(fibs(8));
 
 function fibsRec(num) {
-  let secuence;
   if (num === 0) return [0];
   if (num === 1) return [0, 1];
 
+  let secuence;
   secuence = fibsRec(num - 1);
   if (secuence.length < num)
     secuence.push(
